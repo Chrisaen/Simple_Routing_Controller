@@ -1,18 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutMeController;
+use App\Http\Controllers\SkillsController;
+use App\Http\Controllers\HobbiesController;
 
+Route::get('/about-me', [AboutMeController::class, 'index'])->name('about');
 
-Route::get('/about-me', function () {
-    return view('about');
-})->name('about');
+Route::get('/skills', [SkillsController::class, 'index'])->name('skills');
 
-
-Route::get('/skills', function () {
-    return view('skills');
-})->name('skills');
-
-
-Route::get('/hobbies', function () {
-    return view('hobbies');
-})->name('hobbies');
+Route::get('/hobbies', [HobbiesController::class, 'index'])->name('hobbies');
