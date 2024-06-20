@@ -8,7 +8,7 @@ class SkillsController extends Controller
 {
     public function index()
     {
-        $skillsContent = 'This is the Skills page.';
+        $skillsContent = 'HTML, C#, JavaScript.';
         return view('skills', compact('skillsContent'));
     }
 }

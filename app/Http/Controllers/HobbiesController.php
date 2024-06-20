@@ -8,7 +8,7 @@ class HobbiesController extends Controller
 {
     public function index()
     {
-        $hobbiesContent = 'This is the Hobbies page.';
+        $hobbiesContent = 'I love playing basketball and working out during my free time. I also play Esports like Dota 2 and Mobile Legends.';
         return view('hobbies', compact('hobbiesContent'));
     }
 }
