@@ -8,12 +8,7 @@ class HobbiesController extends Controller
 {
     public function index()
     {
-        // "Hobbies" page
-        $data = [
-            'title' => 'Hobbies',
-            'content' => 'This is the Hobbies page.'
-        ];
-
-        return view('hobbies', $data);
+        $hobbiesContent = 'This is the Hobbies page.';
+        return view('hobbies', compact('hobbiesContent'));
     }
 }
